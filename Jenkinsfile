@@ -1,5 +1,5 @@
 node {
-    
+ properties([gitLabConnection(''), pipelineTriggers([githubPush()])])
  def mvn = tool (name: 'maven 3.6', type: 'maven')
    
 stage('CleanWorkspace') {
