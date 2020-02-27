@@ -36,6 +36,6 @@ sshPublisher(
                         usePromotionTimestamp: false, 
                         useWorkspaceInPromotion: false, 
                         verbose: false)
-            ])
+          ])
     
 }
