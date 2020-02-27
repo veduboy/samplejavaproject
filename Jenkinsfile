@@ -6,7 +6,6 @@ stage('CleanWorkspace') {
         cleanWs()
     }
  stage('SCM Checkout'){
- 
 	git branch: 'master', 
 	url: 'https://github.com/opstree/spring3hibernate'
   }
