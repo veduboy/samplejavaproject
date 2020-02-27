@@ -15,6 +15,7 @@ stage('Mvn Package'){
 	   sh "mvn -f /var/lib/jenkins/workspace/tomcatwardeploy/pom.xml clean package"
       // sh "${mvn} -f /var/lib/jenkins/workspace/tomcatwardeploy/pom.xml clean compile"
   }
+	
 
 sshPublisher(
   continueOnError: false, failOnError: true,
