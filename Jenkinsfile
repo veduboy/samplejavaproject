@@ -7,7 +7,7 @@ stage('CleanWorkspace') {
     }
  stage('SCM Checkout'){
 	git branch: 'master', 
-	url: 'https://github.com/opstree/spring3hibernate'
+	url: 'https://github.com/veduboy/samplejavaproject.git'
   }
    
 stage('Mvn Package'){
