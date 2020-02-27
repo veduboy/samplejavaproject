@@ -1,5 +1,5 @@
 node {
-    
+ properties([gitLabConnection(''), pipelineTriggers([githubPush()])])
  def mvn = tool (name: 'maven 3.6', type: 'maven')
    
 stage('CleanWorkspace') {
@@ -15,6 +15,7 @@ stage('Mvn Package'){
 	   sh "mvn -f /var/lib/jenkins/workspace/tomcatwardeploy/pom.xml clean package"
       // sh "${mvn} -f /var/lib/jenkins/workspace/tomcatwardeploy/pom.xml clean compile"
   }
+	
 
 sshPublisher(
   continueOnError: false, failOnError: true,
