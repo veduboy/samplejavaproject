@@ -9,7 +9,6 @@ stage('CleanWorkspace') {
  
 	git branch: 'master', 
 	url: 'https://github.com/opstree/spring3hibernate'
-   
   }
    
 stage('Mvn Package'){
